@@ -1,0 +1,15 @@
+### hana-system-replication
+
+Step 1:
+
+install Hana in three host as site1, site2, site3
+
+Step 2:
+
+set site2 as master, register site1 to site2;
+
+register site 3 to site2
+
+Step 3:
+
+test the status, to shutdown site2, see whether site1 take over it.
