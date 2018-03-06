@@ -1,0 +1,33 @@
+## python-hdbcli-install
+
+Step 1:
+Download the hana expression download manager "java-1.8 dependence", and install the hdb-client.
+
+Step 2:
+Go to the /path to run 
+> pip install /path/hdb-cli.zip
+
+Step 3:
+using eclipse to test the installation:
+
+> import hdbcli as hc
+> from hdbcli import dbapi
+
+import binascii
+from datetime import datetime, date, time
+import sys
+
+_DBADDRESS_='localhost'
+_DBPORT_=38015
+_DBUSER_='SYSTEM'
+_DBPW_='manager'
+try:
+    _DBADDRESS_ = sys.argv[1]
+    _DBPORT_ = int(sys.argv[2])
+    _DBUSER_ = sys.argv[3]
+    _DBPW_ = sys.argv[4]
+except:
+    pass
+
+
+## waiting for update the next day......
